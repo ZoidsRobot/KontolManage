@@ -85,9 +85,9 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *👋🏻 ʜᴇʟʟᴏ {} *
-❍ AmangRobot is a bot manager + music to manage your group well.
+❍ ZoidsRobot is a bot manager + music to manage your group well.
 ❍ Press /help for Help.
-❍ Managed By @amwang.
+❍ Managed By @ZoidsRobot.
 ────────────────────
 🧸 Users ⋙ `1059236` Users
 📮 Groups ⋙ `15698` Groups
@@ -97,14 +97,14 @@ PM_START_TEXT = """
 buttons = [
         [
         InlineKeyboardButton(
-            text="➕️ Tambahkan Saya Ke Grup ➕️", url="https://t.me/AmangRobot_bot?startgroup=true"
+            text="➕️ Tambahkan Saya Ke Grup ➕️", url="https://t.me/ZoidsRobot?startgroup=true"
         ),
     ],
     [
         InlineKeyboardButton(text="Bantuan ❓", callback_data="emiko_support"
         ),
         InlineKeyboardButton(
-            text="Support 📣", url="t.me/amangsupportgrup"
+            text="Support 📣", url="t.me/Zoidssupport"
         ),
     ],
     [
@@ -117,7 +117,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Klik tombol di bawah ini untuk mendapatkan deskripsi tentang fitur manage Amang Robot."""
+Klik tombol di bawah ini untuk mendapatkan deskripsi tentang fitur manage Zoids Robot."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -368,7 +368,7 @@ def emiko_about_callback(update, context):
     if query.data == "emiko_":
         query.message.edit_text(
             text="🎧 Bantuan Perintah Music."
-            "\npilih menu di bawah ini untuk melihat bantuan Amang Robot",
+            "\npilih menu di bawah ini untuk melihat bantuan Zoids Robot",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -449,9 +449,9 @@ def emiko_about_callback(update, context):
             "\n├ *Rp. 80.000 [ Heroku ]*"
             "\n└ *Sistem Terima Jadi*"
             "\n\n*➻ Catatan*"
-            "\n\n*➻ 𝘼𝙋𝘼𝘽𝙄𝙇𝘼 𝘽𝙊𝙏 𝙔𝘼𝙉𝙂 𝘼𝙉𝘿𝘼 𝙄𝙉𝙂𝙄𝙉𝙆𝘼𝙉 𝙏𝙞𝙙𝙖𝙠 𝙖𝙙𝙖 𝙨𝙞𝙡𝙖𝙝𝙠𝙖𝙣 𝙗𝙚𝙧𝙩𝙖𝙣𝙮𝙖 𝙠𝙚* [ᴀᴍᴀɴɢ](tg://openmessage?user_id=2073506739)"
+            "\n\n*➻ 𝘼𝙋𝘼𝘽𝙄𝙇𝘼 𝘽𝙊𝙏 𝙔𝘼𝙉𝙂 𝘼𝙉𝘿𝘼 𝙄𝙉𝙂𝙄𝙉𝙆𝘼𝙉 𝙏𝙞𝙙𝙖𝙠 𝙖𝙙𝙖 𝙨𝙞𝙡𝙖𝙝𝙠𝙖𝙣 𝙗𝙚𝙧𝙩𝙖𝙣𝙮𝙖 𝙠𝙚* [Zoids](tg://openmessage?user_id=771268607)"
             "\n\n*➻ ʜᴇʀᴏᴋᴜ ʀᴀᴡᴀɴ sᴜsᴘᴇɴ ᴊᴀᴅɪ sᴀʏᴀ ᴅᴇᴘʟᴏʏ ᴅɪ ᴠᴘs.*"
-            "\n\n*➻ sɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ* [ᴀᴍᴀɴɢ](tg://openmessage?user_id=2073506739) *ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ/ᴍᴇɴᴀɴʏᴀᴋᴀɴ ᴄᴏɴᴛᴏʜ ʙᴏᴛ*"
+            "\n\n*➻ sɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ* [Zoids](tg://openmessage?user_id=771268607) *ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ/ᴍᴇɴᴀɴʏᴀᴋᴀɴ ᴄᴏɴᴛᴏʜ ʙᴏᴛ*"
             "\n\n*𝗦𝗘𝗞𝗜𝗔𝗡 𝗧𝗘𝗥𝗜𝗠𝗔 𝗞𝗔𝗦𝗜𝗛 🙏.*",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -479,8 +479,8 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*Bantuan Perintah AmangRobot*)"
-            "\npilih tombol dibawah untuk melihat bantuan perintah AmangRobot",
+            text="*Bantuan Perintah ZoidsRobot*)"
+            "\npilih tombol dibawah untuk melihat bantuan perintah ZoidsRobot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -499,15 +499,15 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_own":
         query.message.edit_text(
-            text="*ᴊɪᴋᴀ ᴋᴀʟɪᴀɴ ᴍᴇɴʏᴜᴋᴀɪ ᴀᴍᴀɴɢ ʀᴏʙᴏᴛ ᴅᴀɴ ɪɴɢɪɴ ʙᴇʀᴅᴏɴᴀsɪ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀɴᴛᴜ ᴀɢᴀʀ ᴀᴍᴀɴɢ ʀᴏʙᴏᴛ ᴛᴇᴛᴀᴘ ᴀᴋᴛɪғ ᴛᴇʀᴜs.*"
+            text="*ᴊɪᴋᴀ ᴋᴀʟɪᴀɴ ᴍᴇɴʏᴜᴋᴀɪ Zoids ʀᴏʙᴏᴛ ᴅᴀɴ ɪɴɢɪɴ ʙᴇʀᴅᴏɴᴀsɪ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀɴᴛᴜ ᴀɢᴀʀ Zoids ʀᴏʙᴏᴛ ᴛᴇᴛᴀᴘ ᴀᴋᴛɪғ ᴛᴇʀᴜs.*"
             f"\n\n➻ *ᴋᴀʟɪᴀɴ ʙɪsᴀ ʙᴇʀᴅᴏɴᴀsɪ ᴅᴇɴɢᴀɴ ᴠɪᴀ ᴅᴀɴᴀ/ϙʀɪs ᴀᴛᴀᴜ ᴋᴀʟɪᴀɴ ʙɪsᴀ ʜᴜʙᴜɴɢɪ ᴏᴡɴᴇʀ ᴅɪʙᴀᴡᴀʜ ɪɴɪ*"
             f"\n\n➻ *ᴅᴀɴ ᴜɴᴛᴜᴋ ʏᴀɴɢ sᴜᴅᴀʜ ʙᴇʀᴅᴏɴᴀsɪ sᴀʏᴀ ᴜᴄᴀᴘᴋᴀɴ ᴛᴇʀɪᴍᴀᴋᴀsɪʜ ʙᴀɴʏᴀᴋ* 🙏",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="👨‍💻 ᴀᴍᴀɴɢ•", url="tg://openmessage?user_id=2073506739"),
-                    InlineKeyboardButton(text="💳 ϙʀɪs", url="https://te.legra.ph/file/20897710ec3f3594d354d.jpg"),
+                    InlineKeyboardButton(text="👨‍💻 ᴀᴍᴀɴɢ•", url="tg://openmessage?user_id=771268607"),
+                    InlineKeyboardButton(text="💳 ϙʀɪs", url="https://te.legra.ph/file/d3b33df2a8979989b7918.jpg"),
                  ],
                  [
                     InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_back"),                 
@@ -811,7 +811,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1252482197:
+        if OWNER_ID != 771268607:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
